@@ -1,5 +1,15 @@
-import React, { useEffect, useMemo, useReducer, useState } from "react";
+import React, { useEffect, useMemo, useReducer, useState, useRef } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+
+const formRef = useRef();
+const sendEmail = (e) => {
+  e.preventDefault();
+  emailjs.sendForm("service_276lrif", "template_bi9mo6r", formRef.current, "0Yq-ibipS04GEC5iq")
+    .then(() => alert("✅ অর্ডার সফলভাবে জমা হয়েছে!"))
+    .catch(() => alert("❌ অর্ডার পাঠাতে সমস্যা হয়েছে। আবার চেষ্টা করুন।"));
+};
+
 
 /**
  * An Noor Store — Single-file demo shop
@@ -570,7 +580,11 @@ function CheckoutPage({ cart, subtotal, onNav, dispatch }) {
         <aside className="md:col-span-1 space-y-6">
           {/* Order form posts to FormSubmit */}
 
-          <form action="https://formsubmit.co/test@test.com" method="POST" className="bg-white rounded-2xl p-4 border">
+          <form 
+  ref={formRef} 
+  onSubmit={sendEmail} 
+  className="bg-white rounded-2xl p-4 border"
+>
             {/* --- FormSubmit meta fields --- */}
             <input type="hidden" name="_subject" value="New Order — An Noor Store" />
             <input type="hidden" name="_template" value="table" />
