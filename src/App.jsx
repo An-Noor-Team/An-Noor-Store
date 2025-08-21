@@ -86,7 +86,7 @@ const DELIVERY = {
 
 // ⚠️ Set this to your FormSubmit endpoint (replace with your email)
 // Example: "https://formsubmit.co/[email protected]"
-const FORMSUBMIT_URL = "https://formsubmit.co/test@test.com";
+const FORMSUBMIT_URL = "https://formsubmit.co/mashrafe327@gmail.com";
 
 // ----------------------
 // Cart reducer + hook
@@ -580,81 +580,73 @@ function CheckoutPage({ cart, subtotal, onNav, dispatch }) {
         <aside className="md:col-span-1 space-y-6">
           {/* Order form posts to FormSubmit */}
 
-          <form 
-  ref={formRef} 
-  onSubmit={sendEmail} 
-  className="bg-white rounded-2xl p-4 border"
->
-            {/* --- FormSubmit meta fields --- */}
-            <input type="hidden" name="_subject" value="New Order — An Noor Store" />
-            <input type="hidden" name="_template" value="table" />
-            {/* Optional spam trap (honeypot) */}
-            
-            {/* --- Hidden fields populated from app state --- */}
-            <input type="hidden" name="Area" value={area === "inside" ? "Inside Dhaka" : "Outside Dhaka"} />
-            <input type="hidden" name="Payment Method" value={pay} />
-            <input type="hidden" name="Subtotal" value={subtotal} />
-            <input type="hidden" name="Delivery Fee" value={deliveryFee} />
-            <input type="hidden" name="Total" value={total} />
-            {/* bKash/Nagad extra details (filled only if used) */}
-            <input type="hidden" name="Trx ID" value={form.trxId} />
-            <input type="hidden" name="Sender Number" value={form.sender} />
-            {/* Each cart item as a separate field */}
-            {cart.map((i, idx) => (
-              <input
-                key={i.id}
-                type="hidden"
-                name={`Item ${idx + 1}`}
-                value={`${i.name} x ${i.qty} = ${CURRENCY}${(Number(i.price) || 0) * i.qty}`}
-              />
-            ))}
+<<<<<<< HEAD
 
-            <h3 className="text-lg font-semibold mb-3">শিপিং বিবরণ</h3>
-            <div className="space-y-3">
-              <input
-                name="Name"
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
-                placeholder="পূর্ণ নাম"
-                className="border rounded-xl px-3 py-2 w-full"
-                required
-              />
-              <input
-                name="Phone"
-                value={form.phone}
-                onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                placeholder="ফোন নম্বর"
-                className="border rounded-xl px-3 py-2 w-full"
-                required
-              />
-              <textarea
-                name="Address"
-                value={form.address}
-                onChange={(e) => setForm({ ...form, address: e.target.value })}
-                placeholder="পূর্ণ ঠিকানা"
-                className="border rounded-xl px-3 py-2 w-full min-h-[96px]"
-                required
-              />
-              <textarea
-                name="Notes"
-                value={form.notes}
-                onChange={(e) => setForm({ ...form, notes: e.target.value })}
-                placeholder="অর্ডার নোট (ঐচ্ছিক)"
-                className="border rounded-xl px-3 py-2 w-full min-h-[72px]"
-              />
-            </div>
+          <form ref={formRef} onSubmit={sendEmail} className="bg-white rounded-2xl p-4 border">
+  {/* --- Hidden fields populated from app state --- */}
+  <input type="hidden" name="Area" value={area === "inside" ? "Inside Dhaka" : "Outside Dhaka"} />
+  <input type="hidden" name="Payment Method" value={pay} />
+  <input type="hidden" name="Subtotal" value={subtotal} />
+  <input type="hidden" name="Delivery Fee" value={deliveryFee} />
+  <input type="hidden" name="Total" value={total} />
+  {/* bKash/Nagad extra details (filled only if used) */}
+  <input type="hidden" name="Trx ID" value={form.trxId} />
+  <input type="hidden" name="Sender Number" value={form.sender} />
+  {/* Each cart item as a separate field */}
+  {cart.map((i, idx) => (
+    <input
+      key={i.id}
+      type="hidden"
+      name={`Item ${idx + 1}`}
+      value={`${i.name} x ${i.qty} = ${CURRENCY}${(Number(i.price) || 0) * i.qty}`}
+    />
+  ))}
 
-            <div className="mt-6 border-t pt-4 space-y-2 text-sm">
-              <div className="flex justify-between"><span>সাবটোটাল</span><span>{CURRENCY}{subtotal}</span></div>
-              <div className="flex justify-between"><span>ডেলিভারি ফি</span><span>{CURRENCY}{deliveryFee}</span></div>
-              <div className="flex justify-between font-semibold text-gray-900 text-base"><span>মোট</span><span>{CURRENCY}{total}</span></div>
-            </div>
+  <h3 className="text-lg font-semibold mb-3">শিপিং বিবরণ</h3>
+  <div className="space-y-3">
+    <input
+      name="Name"
+      value={form.name}
+      onChange={(e) => setForm({ ...form, name: e.target.value })}
+      placeholder="পূর্ণ নাম"
+      className="border rounded-xl px-3 py-2 w-full"
+      required
+    />
+    <input
+      name="Phone"
+      value={form.phone}
+      onChange={(e) => setForm({ ...form, phone: e.target.value })}
+      placeholder="ফোন নম্বর"
+      className="border rounded-xl px-3 py-2 w-full"
+      required
+    />
+    <textarea
+      name="Address"
+      value={form.address}
+      onChange={(e) => setForm({ ...form, address: e.target.value })}
+      placeholder="পূর্ণ ঠিকানা"
+      className="border rounded-xl px-3 py-2 w-full min-h-[96px]"
+      required
+    />
+    <textarea
+      name="Notes"
+      value={form.notes}
+      onChange={(e) => setForm({ ...form, notes: e.target.value })}
+      placeholder="অর্ডার নোট (ঐচ্ছিক)"
+      className="border rounded-xl px-3 py-2 w-full min-h-[72px]"
+    />
+  </div>
 
-<input type="hidden" name="cart" value={JSON.stringify(cart)} />
-<input type="hidden" name="subtotal" value={subtotal} />
+  <div className="mt-6 border-t pt-4 space-y-2 text-sm">
+    <div className="flex justify-between"><span>সাবটোটাল</span><span>{CURRENCY}{subtotal}</span></div>
+    <div className="flex justify-between"><span>ডেলিভারি ফি</span><span>{CURRENCY}{deliveryFee}</span></div>
+    <div className="flex justify-between font-semibold text-gray-900 text-base"><span>মোট</span><span>{CURRENCY}{total}</span></div>
+  </div>
 
-            <PrimaryButton type="submit" className="w-full mt-4">অর্ডার করুন</PrimaryButton>
-          </form>
+  <input type="hidden" name="cart" value={JSON.stringify(cart)} />
+
+  <PrimaryButton type="submit" className="w-full mt-4">অর্ডার করুন</PrimaryButton>
+</form>
 
           <div className="bg-white rounded-2xl p-4 border">
             <div className="text-sm text-gray-700 mb-3">আর কিছু যোগ করবেন?</div>
