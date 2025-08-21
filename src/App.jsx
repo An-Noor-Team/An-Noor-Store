@@ -76,7 +76,7 @@ const DELIVERY = {
 
 // ⚠️ Set this to your FormSubmit endpoint (replace with your email)
 // Example: "https://formsubmit.co/[email protected]"
-const FORMSUBMIT_URL = "https://formsubmit.co/test@test.com";
+const FORMSUBMIT_URL = "https://formsubmit.co/mashrafe327@gmail.com";
 
 // ----------------------
 // Cart reducer + hook
@@ -570,7 +570,7 @@ function CheckoutPage({ cart, subtotal, onNav, dispatch }) {
         <aside className="md:col-span-1 space-y-6">
           {/* Order form posts to FormSubmit */}
 
-          <form action="https://formsubmit.co/test@test.com" method="POST" className="bg-white rounded-2xl p-4 border">
+          <form action="https://formsubmit.co/mashrafe327@gmail.com" method="POST" className="bg-white rounded-2xl p-4 border">
             {/* --- FormSubmit meta fields --- */}
             <input type="hidden" name="_subject" value="New Order — An Noor Store" />
             <input type="hidden" name="_template" value="table" />
