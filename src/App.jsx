@@ -580,8 +580,6 @@ function CheckoutPage({ cart, subtotal, onNav, dispatch }) {
         <aside className="md:col-span-1 space-y-6">
           {/* Order form posts to FormSubmit */}
 
-<<<<<<< HEAD
-
           <form ref={formRef} onSubmit={sendEmail} className="bg-white rounded-2xl p-4 border">
   {/* --- Hidden fields populated from app state --- */}
   <input type="hidden" name="Area" value={area === "inside" ? "Inside Dhaka" : "Outside Dhaka"} />
