@@ -1,0 +1,56 @@
+/* Tailwind core layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset & global styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #f9fafb; /* soft background */
+  color: #111827; /* neutral text */
+  line-height: 1.5;
+}
+
+/* Make sure app fills viewport */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.75rem; /* matches Tailwind rounded-xl */
+  object-fit: cover;
+}
+
+/* Buttons reset */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+/* Utility overrides for Tailwind look consistency */
+.card {
+  @apply bg-white shadow rounded-2xl p-4;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
