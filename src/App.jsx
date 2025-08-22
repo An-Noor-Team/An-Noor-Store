@@ -80,6 +80,7 @@ const PRODUCTS = [
     images: [
       "products/aura-black.jpg",
       "products/aura-black(1).jpg",
+      "products/aura-black(2).jpg",
     ],
     specs: ["Water Resistance", "Quartz Movement", "Matte Black Dial", "Arabic Numerals"],
     short: "Bold Arabic matte dial.",
