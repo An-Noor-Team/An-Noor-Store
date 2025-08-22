@@ -39,7 +39,7 @@ const PRODUCTS = [
     price: 2190,
     images: [
       "products/white-poedagar.jpg",
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop",
+      "products/white-poedagar(1).jpg",
     ],
     specs: ["স্টেইনলেস স্টিল কেস", "মিনারেল গ্লাস", "ওয়াটার রেসিস্ট্যান্ট"],
     short: "Classy everyday watch.",
@@ -50,8 +50,9 @@ const PRODUCTS = [
     mrp: 2890,
     price: 1990,
     images: [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=1200&auto=format&fit=crop",
+      "products/black-poedagar.jpg",
+      "products/black-poedagar(1).jpg",
+      "products/black-poedagar(2).jpg",
     ],
     specs: ["লেদার স্ট্র্যাপ", "৩ এটিএম রেটিং", "১ বছরের সার্ভিস সাপোর্ট"],
     short: "Minimal white dial.",
@@ -62,8 +63,20 @@ const PRODUCTS = [
     mrp: 3190,
     price: 2390,
     images: [
-      "https://images.unsplash.com/photo-1524805444752-c63f37f1f59b?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop",
+      "products/navy-poedagar.jpg",
+      "products/navy-poedagar(1).jpg",
+    ],
+    specs: ["স্টিল মেশ ব্যান্ড", "কোয়াটজ মুভমেন্ট", "হালকা ওজন"],
+    short: "Clean silver finish.",
+  },
+  {
+    id: "aura-black",
+    name: "Arabic Black Aura Watch",
+    mrp: 3190,
+    price: 2390,
+    images: [
+      "products/aura-black.jpg",
+      "products/aura-black(1).jpg",
     ],
     specs: ["স্টিল মেশ ব্যান্ড", "কোয়াটজ মুভমেন্ট", "হালকা ওজন"],
     short: "Clean silver finish.",
