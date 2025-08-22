@@ -33,7 +33,7 @@ const CURRENCY = "৳";
 
 const PRODUCTS = [
   {
-    id: "watch-arabic-black",
+    id: "watch-arabic-white",
     name: "Poedagar Premium 613 – White Dial",
     mrp: 1299,
     price: 799,
@@ -46,7 +46,7 @@ const PRODUCTS = [
     description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
   },
   {
-    id: "watch-arabic-white",
+    id: "watch-arabic-black",
     name: "Poedahar Premium 613 – Black Dial",
     mrp: 1299,
     price: 799,
