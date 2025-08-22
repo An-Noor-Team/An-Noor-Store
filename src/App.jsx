@@ -20,13 +20,13 @@ const BRAND = {
 };
 
 const CONTACTS = {
-  phone: "+8801XXXXXXXXX",
-  email: "hello@an-noor.example",
+  phone: "+8801822505038",
+  email: "annoororiginal@gmail.com",
   address: "Dhaka, Bangladesh",
-  facebook: "https://facebook.com/yourpage",
-  instagram: "https://instagram.com/yourhandle",
-  twitter: "https://twitter.com/yourhandle",
-  whatsapp: "https://wa.me/8801XXXXXXXXX",
+  facebook: "https://www.facebook.com/AS.annoorstore",
+  instagram: "https://instagram.com/adorbissas",
+  twitter: "https://x.com/annoorstore",
+  whatsapp: "https://wa.me/8801822505038",
 };
 
 const CURRENCY = "৳";
@@ -34,52 +34,52 @@ const CURRENCY = "৳";
 const PRODUCTS = [
   {
     id: "watch-arabic-black",
-    name: "Arabic Dial — Black",
-    mrp: 2990,
-    price: 2190,
+    name: "Poedagar Premium 613 – White Dial",
+    mrp: 1299,
+    price: 799,
     images: [
       "products/white-poedagar.jpg",
       "products/white-poedagar(1).jpg",
     ],
-    specs: ["স্টেইনলেস স্টিল কেস", "মিনারেল গ্লাস", "ওয়াটার রেসিস্ট্যান্ট"],
-    short: "Classy everyday watch.",
+    specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium White Dial"],
+    short: "Classy white dial.",
   },
   {
     id: "watch-arabic-white",
-    name: "Arabic Dial — White",
-    mrp: 2890,
-    price: 1990,
+    name: "Poedahar Premium 613 – Black Dial",
+    mrp: 1299,
+    price: 799,
     images: [
       "products/black-poedagar.jpg",
       "products/black-poedagar(1).jpg",
       "products/black-poedagar(2).jpg",
     ],
-    specs: ["লেদার স্ট্র্যাপ", "৩ এটিএম রেটিং", "১ বছরের সার্ভিস সাপোর্ট"],
-    short: "Minimal white dial.",
+    specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium Black Dial"],
+    short: "Minimal black dial.",
   },
   {
     id: "watch-minimal-silver",
-    name: "Minimal Silver",
-    mrp: 3190,
-    price: 2390,
+    name: "Poedahar Premium 613 – Navy Dial",
+    mrp: 1299,
+    price: 799,
     images: [
       "products/navy-poedagar.jpg",
       "products/navy-poedagar(1).jpg",
     ],
-    specs: ["স্টিল মেশ ব্যান্ড", "কোয়াটজ মুভমেন্ট", "হালকা ওজন"],
-    short: "Clean silver finish.",
+    specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium Navy Dial"],
+    short: "Classy navy dial.",
   },
   {
     id: "aura-black",
-    name: "Arabic Black Aura Watch",
-    mrp: 3190,
-    price: 2390,
+    name: "Aura Arabic Elite – Matte Black",
+    mrp: 1399,
+    price: 899,
     images: [
       "products/aura-black.jpg",
       "products/aura-black(1).jpg",
     ],
-    specs: ["স্টিল মেশ ব্যান্ড", "কোয়াটজ মুভমেন্ট", "হালকা ওজন"],
-    short: "Clean silver finish.",
+    specs: ["Water Resistance", "Quartz Movement", "Matte Black Dial", "Arabic Numerals"],
+    short: "Bold Arabic matte dial.",
   },
 ];
 
@@ -314,11 +314,18 @@ function Home({ onNav }) {
     <main className="max-w-6xl mx-auto py-10 px-4">
       <div className="grid md:grid-cols-2 gap-6 items-center">
         <div>
-          <h1 className="text-3xl font-bold mb-3 text-gray-900">ক্লাসি ওয়াচেস — দৈনন্দিন স্টাইল</h1>
-          <p className="mb-6 text-gray-700">Minimal • Premium • Bangla-first. COD, bKash/Nagad accepted.</p>
+          <h1 className="text-3xl font-bold mb-3 text-gray-900">ঝামেলা ছাড়াই সহজ কেনাকাটা।</h1>
+          <p className="mb-6 text-gray-700">বিশ্বাসযোগ্য পণ্য, সেরা দামে।</p>
           <PrimaryButton onClick={() => onNav("shop")}>পণ্য দেখুন</PrimaryButton>
         </div>
-        <div className="rounded-2xl h-60 bg-gray-200" />
+        <div className="rounded-2xl h-60 overflow-hidden">
+  <img
+    src="/banner.jpg"
+    alt="An Noor Store Banner"
+    className="w-full h-full object-cover"
+  />
+</div>
+
       </div>
 
       <h2 className="text-xl font-semibold mt-12 mb-4">Featured</h2>
