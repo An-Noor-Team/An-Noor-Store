@@ -38,7 +38,7 @@ const PRODUCTS = [
     mrp: 2990,
     price: 2190,
     images: [
-      "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop",
+      "products/white-poedagar.jpg",
       "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop",
     ],
     specs: ["স্টেইনলেস স্টিল কেস", "মিনারেল গ্লাস", "ওয়াটার রেসিস্ট্যান্ট"],
