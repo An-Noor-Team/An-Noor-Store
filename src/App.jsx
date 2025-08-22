@@ -43,6 +43,7 @@ const PRODUCTS = [
     ],
     specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium White Dial"],
     short: "Classy white dial.",
+    description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
   },
   {
     id: "watch-arabic-white",
@@ -56,6 +57,7 @@ const PRODUCTS = [
     ],
     specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium Black Dial"],
     short: "Minimal black dial.",
+    description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
   },
   {
     id: "watch-minimal-silver",
@@ -68,6 +70,7 @@ const PRODUCTS = [
     ],
     specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium Navy Dial"],
     short: "Classy navy dial.",
+    description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
   },
   {
     id: "aura-black",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     ],
     specs: ["Water Resistance", "Quartz Movement", "Matte Black Dial", "Arabic Numerals"],
     short: "Bold Arabic matte dial.",
+    description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
   },
 ];
 
@@ -430,14 +434,13 @@ function ProductDetail({ productId, onNav, dispatch }) {
       </div>
 
       {/* Description */}
-      <div>
-        <h2 className="text-xl font-semibold mb-4">বিস্তারিত</h2>
-        <ul className="text-gray-700 space-y-1">
-          {p.specs.map((s, i) => (
-            <li key={i}>• {s}</li>
-          ))}
-        </ul>
-      </div>
+<div>
+  <h2 className="text-xl font-semibold mb-4">বিস্তারিত</h2>
+  <p className="text-gray-700 whitespace-pre-line">
+    {p.description}
+  </p>
+</div>
+
 
       {/* Other products */}
       <div>
