@@ -68,10 +68,23 @@ const PRODUCTS = [
       "products/navy-poedagar.jpg",
       "products/navy-poedagar(1).jpg",
       "products/navy-poedagar(2).jpg",
-      "products/navy-poedagar(3).jpg",
     ],
     specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium Navy Dial"],
     short: "Classy navy dial.",
+    description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
+  },
+  {
+    id: "watch-minimal-green",
+    name: "Poedahar Premium 613 – Green Dial",
+    mrp: 1299,
+    price: 799,
+    images: [
+      "products/green-poedagar.jpg",
+      "products/green-poedagar(1).jpg",
+      "products/green-poedagar(2).jpg",
+    ],
+    specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium Green Dial"],
+    short: "Classy green dial.",
     description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
   },
   {
