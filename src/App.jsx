@@ -67,6 +67,8 @@ const PRODUCTS = [
     images: [
       "products/navy-poedagar.jpg",
       "products/navy-poedagar(1).jpg",
+      "products/navy-poedagar(2).jpg",
+      "products/navy-poedagar(3).jpg",
     ],
     specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium Navy Dial"],
     short: "Classy navy dial.",
