@@ -546,12 +546,12 @@ function CheckoutPage({ cart, subtotal, onNav, dispatch, formRef, sendEmail }) {
   {/* Show merchant numbers dynamically */}
   {pay === "bKash" && (
     <p className="mt-3 text-sm text-gray-800">
-      📱 বিকাশ নাম্বার: <b>01XXXXXXXXX</b> (Send Money)
+      📱 বিকাশ নাম্বার: <b>01822505038</b> (Send Money)
     </p>
   )}
   {pay === "Nagad" && (
     <p className="mt-3 text-sm text-gray-800">
-      📱 নগদ নাম্বার: <b>01XXXXXXXXX</b> (Send Money)
+      📱 নগদ নাম্বার: <b>01822505038</b> (Send Money)
     </p>
   )}
 
