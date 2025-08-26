@@ -33,6 +33,20 @@ const CURRENCY = "৳";
 
 const PRODUCTS = [
   {
+    id: "aura-black",
+    name: "Aura Arabic Elite – Matte Black",
+    mrp: 1260,
+    price: 650,
+    images: [
+      "products/aura-black.jpg",
+      "products/aura-black(1).jpg",
+      "products/aura-black(2).jpg",
+    ],
+    specs: ["Water Resistance", "Quartz Movement", "Matte Black Dial", "Arabic Numerals"],
+    short: "Bold Arabic matte dial.",
+    description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
+  },
+  {
     id: "watch-arabic-white",
     name: "Poedagar Premium 613 – White Dial",
     mrp: 1299,
@@ -85,20 +99,6 @@ const PRODUCTS = [
     ],
     specs: ["Stainless Steel", "Water Resistance", "Quartz Movement", "Premium Green Dial"],
     short: "Classy green dial.",
-    description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
-  },
-  {
-    id: "aura-black",
-    name: "Aura Arabic Elite – Matte Black",
-    mrp: 1399,
-    price: 899,
-    images: [
-      "products/aura-black.jpg",
-      "products/aura-black(1).jpg",
-      "products/aura-black(2).jpg",
-    ],
-    specs: ["Water Resistance", "Quartz Movement", "Matte Black Dial", "Arabic Numerals"],
-    short: "Bold Arabic matte dial.",
     description: "এই ঘড়িটি স্টেইনলেস স্টিলের তৈরি, টেকসই এবং প্রতিদিনের ব্যবহারের জন্য উপযোগী।"
   },
 ];
